@@ -1,9 +1,8 @@
 <?php
 function shortcode_form_template()
 {
-    $html ="";
     ob_start();
-    $html = require_once(PLUGIN_DIR . 'front/form-template.php');
+    require_once(PLUGIN_DIR . 'front/form-template.php');
     return ob_get_clean();
 }
 
